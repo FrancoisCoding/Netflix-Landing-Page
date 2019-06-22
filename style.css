@@ -420,10 +420,65 @@ img {
         padding: 1.2rem 1.6rem;
         text-transform: uppercase;
     }
+
+    .table {
+        display: grid;
+    }
+
+    .table thead th {
+        font-size: .5rem;
+        text-transform: uppercase;
+        padding: 0.3rem;
+    }
+
+    .table tbody tr td {
+        padding: 0.3rem 0.3rem;
+    }
+
+    .table tbody tr td:hover {
+        color: #fff;
+    }
+
+    .table tbody tr td:first-child {
+        font-size: .7rem;
+    }
 }
 
 @media(max-height: 600px) {
     .showcase-content {
         margin-top: 3rem;
+    }
+
+    .showcase-content h1 {
+        font-size: 2rem;
+        line-height: .2;
+    }
+
+    .showcase-content p {
+        text-transform: uppercase;
+        font-size: 1rem;
+        line-height: .2;
+        margin: 0 0 1rem;
+    }
+}
+
+@media(max-height: 400px) {
+    .table {
+        display: grid;
+    }
+
+    .table thead th {
+        position: absolute;
+        font-size: .3rem;
+        text-transform: uppercase;
+        padding: 0.2rem;
+    }
+
+    .table tbody tr td {
+        padding: 0.2rem 0.2rem;
+    }
+
+    .table tbody tr td:first-child {
+        font-size: .4rem;
     }
 }
